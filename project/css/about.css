@@ -24,73 +24,136 @@ body {
     border-radius: 50%;
     text-align: center;
     overflow: hidden;
+    
   }
-  input {
-    width: 500px;
-    padding: 10px;
+  header img {
     border-radius: 10px;
-    font-size: 1rem;
+
   }
+
   button{
+    margin-left: 40%;
+  }
+  .hide{
+    display: none;
+  }
+  .show{
+    display: block;
+  }
+
+   .readMore_btn{
     background-color: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    padding: 15px 32px;
     color: #fff;
-    padding: 10px;
-    font-size: 1rem;
-    border-radius: 15px;
+    font-size: 1,2em;
+    cursor: pointer;
+   }
+
+    .readMore_btn:hover{
+   background-color: #000;
+   
+   }
+
+
+    button{
+    margin-left: 40%;
   }
-  button:hover{
-    background-color: #000;
+  .ride{
+    display: none;
   }
-  h4{
-    background-color: #fff;
-    color: #000;
+  .sho{
+    display: block;
   }
+
+   .readMore_bt{
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 40px;
+    padding: 15px 32px;
+    color: #fff;
+    font-size: 1,2em;
+    cursor: pointer;
+   }
+
+    .readMore_bt:hover{
+   background-color: #000;
+   
+   }
+
   .fa-whatsapp{
     font-size: 50px;
   }
   .btn-wsp:hover{
     background-color:#28e76e ;
   }
-  .card button{
-    background: #000;
-    color: #fff;
-    width: 40%;
+
+  .conteneder{
+    background-color:#eee;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 1rem;
+    transition: .03s;
     border-radius: 10px;
-    font-size: 0.9rem;
-    transform: scale(1.05);
-    transition: opacity 0.3s ease-in-out
+    width: 90%;
+    
   }
 
-  .card button :hover{
-    transform: scale(1.05);
-    transition: opacity 0.3s ease-in-out;
+  .cont{
+  background-color:#eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  border-radius: 10px;
+  width: 150%;
+  transition: 2s;
+  max-width: 100%;
+  margin-left: 1%;
+  }
+  .cont img{
+    border-radius: 10px;
+    max-width: 30%;
+    margin: 1rem;
+    float: right;
+  }
+ 
+  
+  .Sucess{
+  background-color: #eee;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  transition: 5s;
+  border-radius: 10px;
+  margin-left: 30%;
+  max-width: 80%;
+  }
+ 
+  .Sucess img{
+    border-radius: 10px;
+    float: right;
+    max-width: 40%;
+    margin: 1rem;
+    float: left;
+  }
+  
+    
+  .Account {
+    background-color: #eee;
+    margin: 1rem;
+    border-radius: 10px;
+   
+    margin-left: 30%;
+   
+  
+  }
+  .Account h2{
+    margin-left:0% ;
+  }
+  .Account img{
+    border-radius: 10px;
+    float: right;
+    max-width: 40%;
   }
 
-  #dialogFile{
-    margin-left: 25%;
-    margin-top: 2rem;
-  }
-  dialog{
-    margin-left: 25%;
-    margin-top: 2rem;
-    border-radius: 10px;
-    border-color: #fff;
-    box-shadow: 0 0 10px #333;
-    width: 25%;
-  }
-  dialog p{
-    margin: 0.5rem;
-  }
-.Heros {
-    text-align: center;
-    padding:  20px;
-    color: white;
-    margin-bottom: 2rem;
-    max-width: 900px;
-    border-radius: 10px;
-    background: #f8f8f8;
-    box-shadow:0 0 7px #333;
-  }
   .discover h2{
     background-color: #fff;
     color: #000;
@@ -103,15 +166,6 @@ body {
     transform: scale(1.05);
     transition: opacity 0.3s ease-in-out;
   }
-
-  .Heros img {
-    margin: 1rem;
-    max-width: 630px;
-    border-radius: 10px;
-    margin-top: 15px;
-   
-  }
-
 
   #Facts, #histoty {
     background: #f8f8f8;
@@ -224,6 +278,7 @@ h1{
         color: white;
         text-align: center;
         margin-bottom: 10px;
+        border-radius: 10px;
         width: 100%;
         font-size: 1.5rem;
     }
@@ -234,21 +289,10 @@ h1{
 
     #Facts, #histoty {
     
-        transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+        transition: transform 0.3s ease-in-out,
+        background-color 0.3s ease-in-out;
       
     }
-
-    dialog{
-        margin-left: 25%;
-        margin-top: 2rem;
-        border-radius: 10px;
-        border-color: #fff;
-        box-shadow: 0 0 10px #333;
-        width: 25%;
-      }
-      dialog p{
-        margin: 1rem;
-      }
     #histoty a{
         background-color:#000 ;
     }
@@ -301,19 +345,6 @@ h1{
 }
 
 @media (min-width: 750px) {
-
-
-    dialog{
-        margin-left: 25%;
-        margin-top: 2rem;
-        border-radius: 10px;
-        border-color: #fff;
-        box-shadow: 0 0 10px #333;
-        width: 25%;
-      }
-      dialog p{
-        margin: 1rem;
-      }
     .info-grid {
         display: grid;
         grid-template-columns: 1fr 1fr; 
@@ -465,7 +496,7 @@ h1{
         border-radius: 5px;
         text-decoration: none;
     }
-    h1, h4 {
+    h1 {
         text-align: center;
         font-size: 2rem; 
         background: var(--primary-color);
@@ -573,15 +604,7 @@ h1{
         margin-bottom: 2px;
       }
     
-      .Placeschimborazo h2 {
-        grid-column: span 2;
-        text-align: center;
-        font-size: 1.8rem;
-        background-color: #fff;
-        color:#000;
-        padding: 10px;
-        border-radius: 8px;
-      }
+   
 
       .Placeschimborazo a {
         background-color: var(--secunddary-color);
@@ -635,17 +658,7 @@ h1{
 }
 @media (max-width: 763px) {
 
-    dialog{
-        margin-left: 25%;
-        margin-top: 2rem;
-        border-radius: 10px;
-        border-color: #fff;
-        box-shadow: 0 0 10px #333;
-        width: 55%;
-      }
-      dialog p{
-        margin: 0.5rem;
-      }
+
 
     .Heros {
         text-align: center;
@@ -671,16 +684,7 @@ h1{
         font-size: 1.5rem;
       }
     
-      .Heros p {
-        font-size: 1.2rem;
-        color: #000;
-      }
-      .Heros a{
-        font-size: 1rem;
-      }
-    #listView {
-        display: none;
-    }
+      
     body {
         margin: 0 auto;
         background-color: #f8f8f8;
@@ -709,13 +713,7 @@ h1{
         border-radius: 10px;
         box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
       }
-      .card img {
-        width: 100%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin-top: 15px;
-      }
-
+      
     header img {
         margin: 5px;
         width: 50px;
@@ -855,28 +853,6 @@ h1{
     .Placeschimborazo h2{
      background: #fff;
     }
-
-    h2 {
-        padding: 10px;
-        background: var(--primary-color);
-        color: white;
-        text-align: center;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 1.5rem;
-    }
-    h1, h4 {
-        text-align: center;
-        background: var(--primary-color);
-        padding: 10px;
-        color: white;
-        margin-bottom: 10px;
-        width: 100%;
-        font-size: 2rem;
-
-    }
-   
-    
    
     .Bottons {
         display: flex;
@@ -902,27 +878,8 @@ h1{
    
     }
 
-    .card img {
-        
-        max-height: 150px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;  
-       
-    }
  
-     .card {
-    
-        padding: 20px;
-        box-shadow: 0 0 7px #333;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        background: white;
-        flex-direction: column;
-        align-items: center;
-        margin: 0.8rem;
-    }
+   
    
     footer {
        
@@ -936,17 +893,7 @@ h1{
     }
     
 
-    .card img {
-       
-        max-height: 151px;
-        object-fit: contain;
-        width: 100%;
-        margin-bottom: 10px;
-    }
-    
-    
-
-    
+   
     
 
     

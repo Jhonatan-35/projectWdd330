@@ -6,16 +6,22 @@
     <title> Home | Chimborazo Mountaineering Club</title>
     <meta name="description" content="Home Page- Chimborazo Mountaineering Club​​">
     <meta name="author" content="Jhonatan  Yugsan ">
+    <meta property="og:title" content="Home Chimborazo Mountaineering Club​" >
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jhonatan-35.github.io/wdd231/project/index.html" >
+    <meta property="og:image" content="https://github.com/Jhonatan-35/wdd231/tree/main/project/images" >
     <link rel="icon" href="images/logoproject.webp" type="images/logoproject" >
     <link rel="stylesheet" href="css/home.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-   
+    <script defer src="scripts/home.js"></script>
   
 </head>
 <body> 
- 
+   <a href="https://api.whatsapp.com/send?phone=" class="btn-wsp" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
     
     <header>
         
@@ -37,9 +43,16 @@
     </nav>  
 
     <main> 
-      
+        <h1>Welcome  Chimborazo  Mountaineering Club</h1>
+        <div class="introduction">
+       <div class="search">
+        <input type="text" placeholder="Search....">
+        <button>Search</button>
+
+       </div>
+        </div>
         <div class="discover"> 
-        <h2>Learn more about the best places in Chimborazo </h2>
+        <h2>Learn more about the best places for your adventure</h2>
         </div>
 
         <section class="Placeschimborazo">
@@ -55,7 +68,7 @@
           <p><strong>Sports:</strong> hike ,climbing</p>
            <p><strong>Information:</strong>Considered one of the best climbing areas in Ecuador, located at 3,550 meters above sea level, it has more than 100 equipped rock climbing routes, ranging in difficulty from V+ to 8c+; its walls are 2 km long and range in height from 20 to 100 meters.</p>
           <img src="images/chorrerachimborazo.webp" alt=" The Chorrera Chimborazo" loading="lazy">
-          <button id="closeButton">close</button>
+          <button id="closeButton">X</button>
         </dialog>
         </div>
                 
@@ -70,7 +83,7 @@
           <p> <strong>Sports:</strong> camping ,hike</p>
           <p><strong>Information:</strong>This lagoon is considered the most beautiful in the El Altar Volcano lake complex in Chimborazo Province, Ecuador, due to its diverse and spectacular waterfalls, emanating from melting glaciers, its large caldera-shaped volcanic rock, and its azure waters. It is located at an altitude of 4,189 meters above sea level.</p>
           <img src="images/lakeblues.webp" alt=" The lake Blue" loading="lazy">
-          <button id="closeInfo">close</button>
+          <button id="closeInfo">X</button>
         </dialog>
         </div>
 
@@ -85,7 +98,7 @@
         <p> <strong>Sports:</strong> climbing, hike</p>
         <p> <strong>Information:</strong>It is one of the lagoons in the Altar Nevado lake system. It is located within the peak's crater at 4,150 m above sea level. It is formed by the melting of the snow and its mineral color, hence its name "Yellow Lagoon." The formation is approximately 220 to 250 m wide by 600 m long.</p>
         <img src="images/lakeyellow.webp" alt=" The lake Blue" loading="lazy">
-        <button id="closeInfor">close</button>
+        <button id="closeInfor">X</button>
       </dialog>
         </div>
         
@@ -100,7 +113,7 @@
           <p><Strong>Sports:</Strong> hike, camping</p>
           <p><Strong>Information:</Strong>Puñay is the mountain that rises alone in the middle of the great Piñancay valley. It boasts brilliant sunsets, accompanied by rays that pierce the vast coastal plain. The residents of Chunchi claim that on clear nights, they can see the lights of Guayaquil glisten from the top of this mountain. </p>
           <img src="images/hillpuñay.webp" alt=" The lake Blue" loading="lazy">
-          <button id="closeIn">close</button>
+          <button id="closeIn">X</button>
         </dialog>
         </div>
         
@@ -117,7 +130,7 @@
               <p><Strong>Information:</Strong> Carihuairazo is one of the most easily accessible and acclimatizing mountains for mountaineers seeking to summit the country's most challenging peaks. It is located just 10 km from Nevado Chimborazo</p>
               <img src="images/lakegariguarazo.webp" alt=" The lake Blue" loading="lazy">
            
-              <button id="closeMore">close</button>
+              <button id="closeMore">X</button>
             </dialog>
             </div>
         <div class="card">
@@ -131,11 +144,51 @@
             <p><strong>Sports:</strong> climbing , camping</p>
             <p><Strong>Information:</Strong>At the Chimborazo refuge, you can engage in activities such as photography, environmental interpretation, landscape observation (flora and fauna - condors - vicuñas), handicraft sales, and food service. The Andean condor is a bird of great value to Ecuador and can be seen on the National Emblem and the Flag of Ecuador.</p>
             <img src="images/refsafechimborazo.webp" alt=" The lake Blue" loading="lazy">
-            <button id="closeFile">close</button>
+            <button id="closeFile">X</button>
           </dialog>
             </div>
              
-    
+       
+      </section>
+
+      <section class="Heros">
+        <h2>Learn more about the majestic and imposing volcan Chimborazo</h2>
+           
+        <p> Learn more about the history of the powerful Chimborazo volcano, one of the highest volcanoes in South America, followed by Everest. If you would like to know more, we leave the link here.</p>
+        <a href="https://www.google.com/search?q=a07694d29&rlz=1C1ONGR_esEC1051EC1051&sourceid=chrome&ie=UTF-8" class="cta-button">More Information</a>
+        <img src="images/chimborazo.webp"  alt="chamber commerce Riobamba">
+   
+    </section>
+     <div class="info-grid"> 
+                <section id="Facts">
+                    <h2>Facts about Chimborazo</h2>
+                    <ul>
+                        <li><strong>Location:</strong> 150 km south of Quito</li>
+                        <li> <strong>  Cordillera:</strong>Andes </li>
+                        <li> <strong>Current population:</strong>471,933 people</li>
+                        <li> <strong>Zip code:</strong> EC06 </li>
+                        
+                    </ul>
+                    <a href="https://es.wikipedia.org/wiki/Provincia_de_Chimborazo">More information</a>
+
+                </section>
+                <section id="histoty">
+                    <h2>Our History</h2>
+                    <ul>
+                      <li>
+                        <strong>Foundation:</strong> January 18, 2024 in city Riobamba
+                      </li>
+                      <li><strong>Manager:</strong> Jhonatan Yugsan</li>
+                      <li><strong>Workers:</strong>  20 Workers</li>
+                    </ul>
+                    <a href="about.html" target="_blank"> More information</a>
+                  </section>
+                  </div>
+                  <div class="source">
+                  <h4>Sources of information</h4>
+                  <p><strong>Turist Riobamba:</strong>https://riobamba.com.ec/</p>
+                </div>
+
         </main>
     <footer>
         <p>&copy; <span id="copyright-year"></span> WDD 330 | Jhonatan Ariel Yugsan  Ecuador</p>
@@ -148,6 +201,9 @@
           <a href="https://www.instagram.com/">
             <img src="images/Instagramlogo.png" alt="Instagram">
           </a>
+           
+        <p id="demo"></p>
+        
     </footer>
     <script src="scripts/page.js" type="module"></script>
   </body>
