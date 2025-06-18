@@ -729,7 +729,7 @@ h1{
     nav {
         
         position: relative;
-       background-color: #000000;
+       background-color: var(--secunddary-color);
         padding: 10px;
     }
 
@@ -764,8 +764,8 @@ h1{
 	font-weight: 700;
 	text-decoration: none;
 	padding: 0.5rem 0.75rem;
-	background-color: black;
-	color: #fff;
+	background-color: var(--secunddary-color);
+	color: #000;
 }
     .show li {
         display: block;
@@ -780,8 +780,8 @@ h1{
     }
     .navigation a:hover,
     .navigation a:active {
-	color: white;
-	background-color: black;
+	color: #000;
+	background-color: var(--secunddary-color);
 }
 
 
@@ -791,7 +791,7 @@ h1{
         list-style: none;
         margin: 0;
         display: none;
-        background: black;
+        background: var(--secunddary-color);
         border-radius: 8px;
         position: absolute;
         top: 100%;
@@ -815,7 +815,7 @@ h1{
     }
 
     nav ul li a {
-        color: white;
+        color: #000;
         display: block;
         font-size: 18px;
         text-decoration: none;
